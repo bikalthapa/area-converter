@@ -1,0 +1,42 @@
+.main{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	margin: auto;
+	width: 490px;
+	box-shadow: 2px 2px 5px;
+}
+.heading{
+	text-align: center;
+}
+#units{
+	margin: 20px;
+	margin-bottom: 5px;
+}
+.visible{
+	display: flex;
+	flex-direction: row;
+}
+.invisible{
+	display: none;
+}
+.from{
+	margin: 20px;
+	border: 2px solid black;
+	padding: 10px;
+}
+.to{
+	margin: 20px;
+	border: 2px solid black;
+	padding: 10px;
+	height: 100px;
+}
+option,select{
+	font-size: 25px;
+}
+
+.inputfrom, .inputto{
+	margin-top: 15px;
+	padding: 5px;
+	font-size: 15px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electro Numerical Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1 class="heading"> My Converter</h1>
+
+<div class="main">
+	<select id="units" onchange="units()">
+		<option value="">Select Unit</option>
+		<option value="length">Length</option>
+		<option value="nepaliland">Local Area</option>
+	</select>
+
+
+
+<div class="invisible" id="lengthdiv">
+	<div class="from">
+		<select id="from" onchange="length('from')">
+			<option>Select Options</option>
+			<option value="meter">Meter</option>
+			<option value="foot">Foot</option>
+			<option value="centimeter">Centimeter</option>
+			<option value="kilometer">Kilo Meter</option>
+		</select><br>
+		<input type="number" id="fromin" class="inputfrom" oninput="length('from')" placeholder="From">
+	</div>
+	<div class="to">
+		<select id="to" onchange="length('to')">
+			<option>Select Options</option>
+			<option value="meter">Meter</option>
+			<option value="foot">Foot</option>
+			<option value="centimeter">Centimeter</option>
+			<option value="kilometer">Kilo Meter</option>
+		</select><br>
+		<input type="number" id="toin" class="inputto" oninput="length('to')" placeholder="To">
+	</div>
+</div>
+
+
+<div class="visible" id="nepalidiv">
+	<div class="from">
+		<select id="nepalifrom" onchange="nepaliland('from')">
+			<option>Select Options</option>
+			<option value="khetmuri">Khetmuri</option>
+			<option value="ropani">Ropani</option>
+			<option value="bigha">Bigha</option>
+			<option value="kattha">Kattha</option>
+			<option value="dhur">Dhur</option>
+			<option value="msq">M<sup>2</sup></option>
+			<option value="sqfeet">Sq. Feet</option>
+			<option value="aana">Aana</option>
+			<option value="paisa">Paisa</option>
+			<option value="daam">Daam</option>
+		</select><br>
+		<input type="number" id="lengthfromin"  class="inputfrom" oninput="nepaliland('from')" placeholder="From">
+	</div>
+	<div class="to">
+		<select id="nepalito" onchange="nepaliland('to')">
+			<option>Select Options</option>
+			<option value="khetmuri">Khetmuri</option>
+			<option value="ropani">Ropani</option>
+			<option value="bigha">Bigha</option>
+			<option value="kattha">Kattha</option>
+			<option value="dhur">Dhur</option>
+			<option value="msq">M<sup>2</sup></option>
+			<option value="sqfeet">Sq. Feet</option>
+			<option value="aana">Aana</option>
+			<option value="paisa">Paisa</option>
+			<option value="daam">Daam</option>
+		</select><br>
+		<input type="number" id="lengthtoin" class="inputto" oninput="nepaliland('to')" placeholder="To">
+	</div>
+</div>
+
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
